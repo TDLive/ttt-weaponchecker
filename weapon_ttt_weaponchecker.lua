@@ -99,20 +99,32 @@ function SWEP:PrimaryAttack()
 	
 	ply:PrintMessage(HUD_PRINTTALK, c_ply:Nick() .. " has:")
 	
+	//ttt weapons
 	if c_ply:HasWeapon("weapon_ttt_c4") then ply:PrintMessage(HUD_PRINTTALK, "C4"); i=1; end
+	if c_ply:HasWeapon("weapon_ttt_confgrenade") then ply:PrintMessage(HUD_PRINTTALK, "Discombobulator"); i=1; end
+	if c_ply:HasWeapon("weapon_ttt_decoy") then ply:PrintMessage(HUD_PRINTTALK, "Decoy"); i=1; end
+	if c_ply:HasWeapon("weapon_ttt_defuser") then ply:PrintMessage(HUD_PRINTTALK, "Defuser"); i=1; end
 	if c_ply:HasWeapon("weapon_ttt_flaregun") then ply:PrintMessage(HUD_PRINTTALK, "Flare Gun"); i=1; end
 	if c_ply:HasWeapon("weapon_ttt_glock") then ply:PrintMessage(HUD_PRINTTALK, "Glock"); i=1; end
+	if c_ply:HasWeapon("weapon_ttt_health_station") then ply:PrintMessage(HUD_PRINTTALK, "Health Station"); i=1; end
 	if c_ply:HasWeapon("weapon_ttt_knife") then ply:PrintMessage(HUD_PRINTTALK, "Knife"); i=1; end
 	if c_ply:HasWeapon("weapon_ttt_m16") then ply:PrintMessage(HUD_PRINTTALK, "M16"); i=1; end
+	if c_ply:HasWeapon("weapon_ttt_phammer") then ply:PrintMessage(HUD_PRINTTALK, "Poltergeist"); i=1; end
+	if c_ply:HasWeapon("weapon_ttt_push") then ply:PrintMessage(HUD_PRINTTALK, "Newton Launcher"); i=1; end
+	if c_ply:HasWeapon("weapon_ttt_radio") then ply:PrintMessage(HUD_PRINTTALK, "Radio"); i=1; end
 	if c_ply:HasWeapon("weapon_ttt_sipistol") then ply:PrintMessage(HUD_PRINTTALK, "Silenced Pistol"); i=1; end
 	if c_ply:HasWeapon("weapon_ttt_smokegrenade") then ply:PrintMessage(HUD_PRINTTALK, "Smoke Grenade"); i=1; end
+	if c_ply:HasWeapon("weapon_ttt_stungun") then ply:PrintMessage(HUD_PRINTTALK, "UMP Prototype"); i=1; end
 	if c_ply:HasWeapon("weapon_ttt_teleport") then ply:PrintMessage(HUD_PRINTTALK, "Teleporter"); i=1; end
+	if c_ply:HasWeapon("weapon_ttt_wtester") then ply:PrintMessage(HUD_PRINTTALK, "DNA Scanner"); i=1; end
+	
+	//zm weapons
 	if c_ply:HasWeapon("weapon_zm_mac10") then ply:PrintMessage(HUD_PRINTTALK, "MAC10"); i=1; end
-	if c_ply:HasWeapon("weapon_zm_molotov") then ply:PrintMessage(HUD_PRINTTALK, "Molotov Cocktail"); i=1; end
-	if c_ply:HasWeapon("weapon_zm_revolver") then ply:PrintMessage(HUD_PRINTTALK, "Revolver"); i=1; end
+	if c_ply:HasWeapon("weapon_zm_molotov") then ply:PrintMessage(HUD_PRINTTALK, "Fire Grenade"); i=1; end //screw spelling that word
+	if c_ply:HasWeapon("weapon_zm_revolver") then ply:PrintMessage(HUD_PRINTTALK, "Deagle"); i=1; end
 	if c_ply:HasWeapon("weapon_zm_rifle") then ply:PrintMessage(HUD_PRINTTALK, "Rifle"); i=1; end
 	if c_ply:HasWeapon("weapon_zm_shotgun") then ply:PrintMessage(HUD_PRINTTALK, "Shotgun"); i=1; end
-	if c_ply:HasWeapon("weapon_zm_sledge") then ply:PrintMessage(HUD_PRINTTALK, "Sledgehammer"); i=1; end
+	if c_ply:HasWeapon("weapon_zm_sledge") then ply:PrintMessage(HUD_PRINTTALK, "H.U.G.E-249"); i=1; end
 	
 	if i=0 then ply:PrintMessage(HUD_PRINTTALK, "...nothing."); end
 	
