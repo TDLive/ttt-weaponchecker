@@ -38,16 +38,16 @@ SWEP.Instructions = "Left mouse checks weapons."
 
 //TTT
 SWEP.Base = "weapon_tttbase"
-SWEP.Kind = WEAPON_PISTOL
+SWEP.Kind = WEAPON_EQUIP2
 SWEP.CanBuy = { ROLE_DETECTIVE }
 SWEP.LimitedStock = false
-SWEP.AllowDrop = true
+SWEP.AllowDrop = false
 SWEP.IsSilent = false
 SWEP.AutoSpawnable = false
 
    SWEP.EquipMenuData = {
       type = "item_weapon",
-      desc = "its a gun"
+      desc = "Left-click checks weapons."
    };
 
 SWEP.Spawnable = true
@@ -74,7 +74,7 @@ SWEP.WorldModel			= "models/weapons/w_pistol.mdl"
 SWEP.Primary.Automatic			= false
 SWEP.Primary.Delay				= 2
 
-SWEP.Category = "TTT Weapons"
+SWEP.Category = "TTT Weapons" //compatibility with sandbox
 
 function SWEP:Deploy()
 return true
