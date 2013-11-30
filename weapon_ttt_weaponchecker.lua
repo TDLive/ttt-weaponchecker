@@ -122,6 +122,8 @@ function SWEP:PrimaryAttack()
 	if c_ply:HasWeapon("weapon_zm_shotgun") then ply:PrintMessage(HUD_PRINTTALK, "Shotgun"); i=1; end
 	if c_ply:HasWeapon("weapon_zm_sledge") then ply:PrintMessage(HUD_PRINTTALK, "Sledgehammer"); i=1; end
 	
+	if i=0 then ply:PrintMessage(HUD_PRINTTALK, "...nothing."); end
+	
 	if SERVER then self:Remove() end
 	
 end
