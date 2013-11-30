@@ -86,8 +86,6 @@ end
 
 function SWEP:PrimaryAttack()
 	if CLIENT then return end
-	
-	print("y")
 
 	check_weapons = { }
 	check_weapons[1] = "ttt_weaponchecker"
