@@ -86,14 +86,6 @@ end
 
 function SWEP:PrimaryAttack()
 	if CLIENT then return end
-
-	check_weapons = { }
-	check_weapons[1] = "ttt_weaponchecker"
-	check_weapons[2] = "weapon_crowbar"
-	
-	check_weapons_lang = { }
-	check_weapons[1] = "Weapon Checker"
-	check_weapons[2] = "Crowbar"
 	
 	local ply = self.Owner
 	
@@ -137,7 +129,4 @@ function SWEP:SecondaryAttack()
 end
 
 function SWEP:Think()
-end
-
-function SWEP:CheckWeapons(ply)
 end
