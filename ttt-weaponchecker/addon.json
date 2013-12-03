@@ -1,0 +1,11 @@
+{
+	"title"		:	"tdlive aw'sum's Trouble in Terrorist Town Weapon Checker",
+	"type"		:	"weapon",
+	"ignore"	:
+	[
+		"*.psd",
+		"*.vcproj",
+		"*.svn*",
+		".git"
+	]
+}
