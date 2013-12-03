@@ -9,7 +9,7 @@
 if SERVER then // This is where the init.lua stuff goes.
  
 	//This makes sure clients download the file
-	AddCSLuaFile ("ttt_weaponchecker.lua")
+	AddCSLuaFile ("weapon_ttt_weaponchecker.lua")
  
 	resource.AddFile( "materials/VGUI/ttt/icon_tdlive_weaponchecker.vmt" )
 	resource.AddFile( "materials/VGUI/ttt/icon_tdlive_weaponchecker.vtf" )
