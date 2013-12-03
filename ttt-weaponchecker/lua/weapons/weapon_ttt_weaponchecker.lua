@@ -55,11 +55,6 @@ SWEP.AllowDrop = false
 SWEP.IsSilent = false
 SWEP.AutoSpawnable = false
 
-   SWEP.EquipMenuData = {
-      type = "item_weapon",
-      desc = "Left-click checks weapons."
-   };
-
 SWEP.Spawnable = true
 SWEP.AdminOnly = true
 
