@@ -31,6 +31,12 @@ elseif CLIENT then // This is where the cl_init.lua stuff goes
 	//Sets drawing the ammuntion levels for this weapon
 	SWEP.DrawAmmo = false
 	
+        SWEP.EquipMenuData = {
+           type  = "item_weapon",
+           name  = "Weapon Checker",
+           desc  = "Left mouse checks weapons."
+        };
+	
 end
 
 SWEP.Author = "tdlive aw'sum"
@@ -128,7 +134,7 @@ function SWEP:PrimaryAttack()
 	
 	if i=0 then ply:PrintMessage(HUD_PRINTTALK, "...nothing."); end
 	
-	sound.Play("weapons/c4/c4_beep1.wav", ply:GetPos()) //play a sound!
+	sound.Play("weapons/c4/c4_click.wav", ply:GetPos()) //play a sound!
 	
 	self:Remove()
 	
