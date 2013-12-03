@@ -1,6 +1,7 @@
 {
 	"title"		:	"tdlive aw'sum's Trouble in Terrorist Town Weapon Checker",
 	"type"		:	"weapon",
+	"description" : "A simple weapon checker for TTT. Free and open source: code is at https://github.com/TDLive/ttt-weaponchecker",
 	"ignore"	:
 	[
 		"*.psd",
