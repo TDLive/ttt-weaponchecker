@@ -43,6 +43,7 @@ SWEP.Author = "tdlive aw'sum"
 SWEP.Instructions = "Left mouse checks weapons."
 
 //TTT
+SWEP.Icon = "VGUI/ttt/icon_tdlive_weaponchecker"
 SWEP.Base = "weapon_tttbase"
 SWEP.Kind = WEAPON_EQUIP2
 SWEP.CanBuy = { ROLE_DETECTIVE }
@@ -132,7 +133,7 @@ function SWEP:PrimaryAttack()
 	if c_ply:HasWeapon("weapon_zm_shotgun") then ply:PrintMessage(HUD_PRINTTALK, "Shotgun"); i=1; end
 	if c_ply:HasWeapon("weapon_zm_sledge") then ply:PrintMessage(HUD_PRINTTALK, "H.U.G.E-249"); i=1; end
 	
-	if i=0 then ply:PrintMessage(HUD_PRINTTALK, "...nothing."); end
+	if i==0 then ply:PrintMessage(HUD_PRINTTALK, "...nothing."); end
 	
 	sound.Play("weapons/c4/c4_click.wav", ply:GetPos()) //play a sound!
 	
