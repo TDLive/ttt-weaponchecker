@@ -128,7 +128,9 @@ function SWEP:PrimaryAttack()
 	
 	if i=0 then ply:PrintMessage(HUD_PRINTTALK, "...nothing."); end
 	
-	if SERVER then self:Remove() end
+	sound.Play("weapons/c4/c4_beep1.wav", ply:GetPos()) //play a sound!
+	
+	self:Remove()
 	
 end
 
