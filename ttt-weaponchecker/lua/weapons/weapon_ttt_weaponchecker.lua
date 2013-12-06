@@ -100,6 +100,13 @@ function SWEP:PrimaryAttack()
 	
 	c_ply = ply:GetEyeTrace().Entity
 	
+	local c_ply_pos = c_ply:GetPos()
+	local ply_pos = ply:GetPos()
+	if ply_pos:Distance( c_ply_pos ) > 2 then
+		ply:PrintMessage(HUD_PRINTTALK , "That player is too far away!")
+		return
+	end
+	
 	local i = 0;
 	
 	ply:PrintMessage(HUD_PRINTTALK, c_ply:Nick() .. " has:")
@@ -140,6 +147,9 @@ function SWEP:PrimaryAttack()
 end
 
 function SWEP:SecondaryAttack()
+
+	if CLIENT then return
+	
 	local ply = self.Owner
 	
 	ply:PrintMessage(HUD_PRINTTALK, "Hint! Use left-click to scan players.")
