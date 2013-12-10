@@ -148,7 +148,7 @@ end
 
 function SWEP:SecondaryAttack()
 
-	if CLIENT then return
+	if CLIENT then return end
 	
 	local ply = self.Owner
 	
