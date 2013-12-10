@@ -102,7 +102,7 @@ function SWEP:PrimaryAttack()
 	
 	local c_ply_pos = c_ply:GetPos()
 	local ply_pos = ply:GetPos()
-	if ply_pos:Distance( c_ply_pos ) > 2 then
+	if ply_pos:Distance( c_ply_pos ) > 190 then
 		ply:PrintMessage(HUD_PRINTTALK , "That player is too far away!")
 		return
 	end
