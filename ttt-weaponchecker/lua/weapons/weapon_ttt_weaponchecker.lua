@@ -140,7 +140,7 @@ function SWEP:PrimaryAttack()
 	
 	if i==0 then ply:PrintMessage(HUD_PRINTTALK, "...nothing."); end
 	
-	sound.Play("weapons/c4/c4_click.wav", ply:GetPos()) //play a sound!
+	sound.Play("ui/buttonclickrelease.wav", ply:GetPos()) //play a sound!
 	
 	self:Remove()
 	
